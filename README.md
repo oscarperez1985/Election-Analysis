@@ -20,15 +20,23 @@ Three deliverables are provided in this analysis:
 
 ## Election-Audit Results
 
-Before being able to analyze the data, we imported a couple of modules that facilitated the manipulation of the input and the output files.
+Please note that when running the supplied code, the following results are displayed in the terminal output:
+
+![Image2](./Resources/Output_Terminal.png)
+
+*Image 1: PyPoll Python 3 script, output results*
+
+A brief description of the code can be found in the following sections.
+
+### 1. Total number of votes
+
+Before being able to analyze the data and start counting votes, we imported a couple of modules that facilitated the manipulation of the input and the output files.
 
 Then a set of objects (variables, lists, tuples, etc.) were defined to hold the output data.
 
-![Image1](./Resources/Code_part01.png)
+![Image2](./Resources/Code_part01.png)
 
-*Image 1: PyPoll Python 3 script, modules import and objects definition*
-
-### 1. Total number of votes
+*Image 2: PyPoll Python 3 script, modules import and objects definition*
 
 To count the total number of votes in the election, a **for loop** was used to iterate over each row in the input dataset. It is worth mentioning, that the first row (the header row) was not considered in the total votes count.
 
@@ -40,33 +48,33 @@ Inside the main **for loop** an **if conditional statement** is set to discrimin
 
 In a similar fashion, the votes casted to each candidate were counted using an additional **if conditional statement** defined inside the main **for loop**. Each candidate received an additional vote every time that its names appeared in the third column of the election result dataset.
 
-![Image2](./Resources/Code_part02.png)
+![Image3](./Resources/Code_part02.png)
 
-*Image 2: PyPoll Python 3 script, total number of votes and vote count by county & candidate*
+*Image 3: PyPoll Python 3 script, total number of votes and vote count by county & candidate*
 
 ### 4. Results by County
 
 At this point, the vote count by county is computed and saved in a dictionary, a **for loop** is used to breakdown the vote count by county. The number of votes and the percentage of total votes for each county is provided. The county with the largest number of votes is also provided. Notice that the results are printed in the terminal but also written in the output analysis file.
 
-![Image3](./Resources/Code_part03.png)
+![Image4](./Resources/Code_part03.png)
 
-*Image 3: PyPoll Python 3 script, results by county*
+*Image 4: PyPoll Python 3 script, results by county*
 
 ### 5. Results by Candidate
 
 Using the same methodology as in the section 4, a **for loop** is set to iterate over the dictionary of votes by candidate in order to breakdown the results. The number of votes and the percentages with respect to the total votes are presented in this section.
 
-![Image4](./Resources/Code_part04.png)
+![Image5](./Resources/Code_part04.png)
 
-*Image 4: PyPoll Python 3 script, results by candidate*
+*Image 5: PyPoll Python 3 script, results by candidate*
 
 ### 6. Winner of the election
 
 The winner of the election is determined based on the vote count and a summary of the winner's statistics is displayed in the terminal and written in the output analysis file.
 
-![Image5](./Resources/Code_part05.png)
+![Image6](./Resources/Code_part05.png)
 
-*Image 5: PyPoll Python 3 script, winner of the election*
+*Image 6: PyPoll Python 3 script, winner of the election*
 
 ## Election-Audit Summary
 
