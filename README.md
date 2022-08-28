@@ -82,4 +82,4 @@ It has been shown the capabilities of the proposed **Python 3** script to analyz
 
 However its capabilities can be used and extended to pretty much any election audit. For example, we could perform a whole State senatorial or congressional election analysis by adding up information about all the counties in Colorado.
 
-Furthermore, we could include additional **for loops** and **if conditional statements** to iterate over all the counties in all the states of the country to analyze presidential election results.
+Furthermore, we could define functions in our script that include any required **for loops** and/or **if conditional statements** to iterate over all the counties in all the states of the country to analyze presidential election results.
